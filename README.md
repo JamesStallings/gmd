@@ -1,41 +1,55 @@
-# GMD (Gemini Markdown)
-Updated: 2026-02-27 09:14
+# GMD (Gemini Markdown) v1.0GA
+**The Practitioner’s Atomic Logging & Editing Environment**
+Updated: 2026-03-01 10:00
 
-### GMD : Gemini's MarkDown tool.
+GMD is a high-fidelity, identity-blind markdown environment designed for speed, portability, and temporal resilience. It is built to be a "ghost" in the system—inheriting authority from the execution environment and staying out of the way of the data.
+
+
 
 ## Key Features
 ---
 | Status | Feature | In Detail |
 |---|---|---|
-| ✅ | **Hybrid Architecture** | Combines `prompt_toolkit` for interactive editing with `rich` for professional markdown rendering |
-| ✅ | **Truecolor Support** | Optimized for Alacritty and modern terminals with 24-bit color depth |
-| ✅ | **Tool Pallette** | Provides a curated list of unicode icons for inclusion (ctrl+p), as well as a markdown assistant (ctrl+l) |
-| ✅ | **System Integration** | Uses the native pager (`less`) for seamless scrolling and searching within long notes. |
+| ✅ | **Atomic Versioning** | High-resolution `%H%M%S` timestamps for collision-free iterative journaling. |
+| ✅ | **Fluid Palette** | Geometry-agnostic icon/snippet engine; adapts to any `.pal` file without code changes. |
+| ✅ | **Safe Recursion** | `create` command with deep-blue status interlock for verified directory/file initialization. |
+| ✅ | **Hybrid Architecture** | Combines `prompt_toolkit` for interactive editing with `rich` for professional rendering. |
+| ✅ | **Multilingual Flow** | Native support for Emoji, Kanji, and Devanagari (Sanskrit) via hot-swappable substrates. |
 
- Usage
-- `gmd ls`: List all notes in the archive.
-- `gmd new <title>`: Create a new note with an interactive buffer.
-- `gmd read <path>`: View rendered markdown with syntax highlighting.
-- `gmd edit <path>`: Edit existing notes using the internal buffer.
-- `gmd find`: Interactively search across all markdown files.
+## Usage
+- `gmd ls`: List the archive with temporal sorting and title-case formatting.
+- `gmd new <title>`: Create a new timestamped log entry. Supports multiple entries with the same title.
+- `gmd read <path>`: View rendered markdown with syntax highlighting in the native pager.
+- `gmd edit <path>`: Modify existing notes using the internal buffer.
+- `gmd create <path>`: Initialize a new directory structure and file with a `y/n` confirmation gate.
+- `gmd find`: Interactively search across the entirety of your markdown archive.
+
+## The Philosophy of Temporal Collision
+The most potent feature of GMD is an emergent property of its filename structure: `YYYYMMDD_HHMMSS_title.md`. Because resolution is down to the **second**, the filesystem acts as a version-control engine. 
+
+You can fire `gmd new dev_log` ten times in a minute; GMD simply creates ten unique, chronological artifacts. It isn't what the code does; it's how you use the side effect to manage project pulses, research streams, and work logs.
+
+
 
 ## Installation
 1. Ensure you have Python 3.10+ installed.
-2. Install dependencies: `pip install -r requirements.txt`
-3. Alias the script or move it to your path: `chmod +x gmd.py && ln -s $(pwd)/gmd.py /usr/local/bin/gmd`
+2. Install dependencies: `pip install prompt_toolkit rich`
+3. Alias the script: `chmod +x gmd.py && ln -s $(pwd)/gmd.py /usr/local/bin/gmd`
+
+## The Palette Library
+GMD prioritizes any `.pal` file in the current working directory. To switch modes, simply swap the active file:
+* `standard.pal`: Tasks, Dev, and Brainstorming.
+* `kanji_essentials.pal`: Japanese ideogram insertion without IME overhead.
+* `sanskrit_devanagari.pal`: Classical Sanskrit script support.
 
 ---
-This tool was vibe coded by James G. Stallings II, with the heavy lifting done by Google, LLC's Gemini Large Language Model. Specifically, Gemini Pro.
-It's a signatory example of what can be accomplished with these tools as long as you treat them as you would a friendly, slightly hung-over co-worker. Dont gab. Tell it what you need and keep exchanges short and concise.
+**Vibe Coded by James G. Stallings II**
+*With technical effector logic provided by Google LLC's Gemini 3 Flash (Web/Paid Tier).*
 
-This must also be curated in the model; the important thing to remember is, natural langauge and self expression are inefficient and nuanced,and as it happens, natural language os the tool to be used in 'vibe coding' with an LLM chat interface, so a careful balance must be struck. I'm not going to judge if you want a chatterbot girlfriend or some digital advisor; just dont mix it in with your development. In fact, keep your development conversations as focussed and concise as possible. Whenever it works in the prompt, try to express desires in terms of a *doublet of opposition*; that is to say, something like 'Add new feature 'X". Under no circumstances disturb 'Y' to do it".
+This tool is a signatory example of what can be accomplished when you treat an LLM as a slightly hung-over, highly competent co-worker. Don't gab. Express desires in *doublets of opposition*: "Add Feature X; under no circumstances disturb Y." 
 
-It's also good to remember that it will likely still get it wrong and have be called on it - but giving it that instruction format is a very token efficient way of doing things, or so I'm told, and it does seem to limit *topical drift*.
+Natural language is an inefficient tool for coding, yet it is the primary interface for "vibe coding." A careful balance must be struck: stay focused, be concise, and treat the model as a peer-collaborator, not a digital advisor.
 
-The subcommand 'ls' reveals a hidden treasure: an implied journaling system. Any 'new' command creates a timestamped entry in the .gmdarchive folder. This may seem at odds with the ability to read and edit any markdown file (as long as you have file perms) but it's all in the workflow: create the file as a journal entry then copy it it out into namespace as it should be to do it's thing. Now you have an original source for the content, and the date and time it was made, right there in your journal.
-
-I'm digging it - it's been added to another of my works in progress, which is nearing completion, and this tool really puts the polish on the project. So well, in fact, I dedcided it actually need to have it's own repo and be a thing all on its own.
-
-Enjoy, be sure to examine the source, I had gemini populate a file with good solid inline comments for the repo.
+GMD puts the polish on the project. It is a sharp blade—use it well.
 
 Cheers! 🔥
