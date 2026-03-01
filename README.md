@@ -4,7 +4,7 @@ Updated: 2026-03-01 10:00
 
 GMD is a high-fidelity, identity-blind markdown environment designed for speed, portability, and temporal resilience. It is built to be a "ghost" in the system—inheriting authority from the execution environment and staying out of the way of the data.
 
-
+Note that this work took a litle over two days of 'off and on' work, typically in 2 to 4 hour sessions. Most of the documentation was also written by Gemini.
 
 ## Key Features
 ---
