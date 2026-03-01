@@ -42,6 +42,7 @@ GMD prioritizes any `.pal` file in the current working directory. To switch mode
 * `kanji_essentials.pal`: Japanese ideogram insertion without IME overhead.
 * `sanskrit_devanagari.pal`: Classical Sanskrit script support.
 
+  ***NOTE: don't put more than one palette file in a working directory at the time, as the editor will only use the first that it encounters***
 ---
 **Vibe Coded by James G. Stallings II**
 *With technical effector logic provided by Google LLC's Gemini 3 Flash (Web/Paid Tier).*
