@@ -4,7 +4,7 @@ Updated: 2026-03-01 10:00
 
 GMD is a high-fidelity, identity-blind markdown environment designed for speed, portability, and temporal resilience. It is built to be a "ghost" in the system—inheriting authority from the execution environment and staying out of the way of the data.
 
-Note that this work took a litle over two days of 'off and on' work, typically in 2 to 4 hour sessions. Most of the documentation was also written by Gemini.
+
 
 ## Key Features
 ---
@@ -42,7 +42,6 @@ GMD prioritizes any `.pal` file in the current working directory. To switch mode
 * `kanji_essentials.pal`: Japanese ideogram insertion without IME overhead.
 * `sanskrit_devanagari.pal`: Classical Sanskrit script support.
 
-  ***NOTE: don't put more than one palette file in a working directory at the time, as the editor will only use the first that it encounters***
 ---
 **Vibe Coded by James G. Stallings II**
 *With technical effector logic provided by Google LLC's Gemini 3 Flash (Web/Paid Tier).*
@@ -54,3 +53,4 @@ Natural language is an inefficient tool for coding, yet it is the primary interf
 GMD puts the polish on the project. It is a sharp blade—use it well.
 
 Cheers! 🔥
+
